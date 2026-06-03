@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Repaso Funciones</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: radial-gradient(circle at 10% 10%, #f3ece0 0%, #e2d4be 40%, #cbbba3 90%),
+                        radial-gradient(circle at 90% 90%, #fcdcc5 0%, transparent 60%);
+            font-family: 'Inter', sans-serif;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            text-shadow: 0 4px 18px rgba(120, 53, 4, 0.12);
+        }
+        details[open] summary ~ * {
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-8px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary { list-style: none; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-4 md:p-8 text-amber-950 antialiased">
+
+    <div class="w-full max-w-5xl mx-auto my-auto py-6">
+        <h1 class="text-center md:text-left text-amber-950 font-bold tracking-wide mb-10 border-b border-amber-950/15 pb-5">
+            Repaso Funciones
+        </h1>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Contar caracteres</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-1/" class="text-amber-900 font-semibold hover:underline">Ejercicio 1 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Recortar texto</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-2/" class="text-amber-900 font-semibold hover:underline">Ejercicio 2 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Dividir Array de textos separados</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-3/" class="text-amber-900 font-semibold hover:underline">Ejercicio 3 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Repetir un texto X veces</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-4/" class="text-amber-900 font-semibold hover:underline">Ejercicio 4 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫  Invertir las palabras</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-5/" class="text-amber-900 font-semibold hover:underline">Ejercicio 5 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Repetirse una palabra</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-6/" class="text-amber-900 font-semibold hover:underline">Ejercicio 6 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Es un palíndromo</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-7/" class="text-amber-900 font-semibold hover:underline">Ejercicio 7 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Eliminar cierto patrón</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-8/" class="text-amber-900 font-semibold hover:underline">Ejercicio 8 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Obtener un número aleatorio </span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-9/" class="text-amber-900 font-semibold hover:underline">Ejercicio 9 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Convertir grados Celsius a Fahrenheit</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-10/" class="text-amber-900 font-semibold hover:underline">Ejercicio 10 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Los números de base binaria a decimal</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-11/" class="text-amber-900 font-semibold hover:underline">Ejercicio 11 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Determinar si una fecha es válida</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-12/" class="text-amber-900 font-semibold hover:underline">Ejercicio 12 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 El número de vocales y consonantes</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-13/" class="text-amber-900 font-semibold hover:underline">Ejercicio 13 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 El texto sea un nombre válido</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-14/" class="text-amber-900 font-semibold hover:underline">Ejercicio 14 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 El texto sea un email válido</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-15/" class="text-amber-900 font-semibold hover:underline">Ejercicio 15 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 El array numérico</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-16/" class="text-amber-900 font-semibold hover:underline">Ejercicio 16 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 El número más alto y el más bajo</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-17/" class="text-amber-900 font-semibold hover:underline">Ejercicio 17 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Los números pares y impares</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-18/" class="text-amber-900 font-semibold hover:underline">Ejercicio 18 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 mb-3 gap-4">
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 La forma ascendente y descendiente</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-19/" class="text-amber-900 font-semibold hover:underline">Ejercicio 19 &rarr;</a>
+                </div>
+                <div class="p-5 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/30 hover:bg-white/75 transition-all duration-300 flex justify-between items-center shadow-sm shadow-amber-900/5">
+                    <span class="font-bold text-amber-950">💫 Eliminar los duplicados</span>
+                    <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-20/" class="text-amber-900 font-semibold hover:underline">Ejercicio 20 &rarr;</a>
+                </div>
+            </div>            
+
+            <div class="md:col-span-2 p-6 bg-white/55 backdrop-blur-2xl rounded-2xl border border-amber-900/10 hover:border-amber-600/40 hover:bg-white/75 hover:shadow-[0_15px_35px_rgba(120,53,4,0.06)] transition-all duration-300 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 shadow-sm shadow-amber-900/5">
+                <div>                    
+                    <span class="font-semibold text-lg text-amber-950">💫 Obtener el promedio</span>
+                </div>
+                <a target="_blank" href="https://nataliya-stack.github.io/repaso-funciones-21/" class="text-amber-900 font-semibold hover:underline">
+                    Ejercicio 21 &rarr;
+                </a>
+            </div>            
+        </div>
+
+        <address class="not-italic text-amber-900/50 font-semibold mt-12 text-center md:text-right tracking-widest text-lg uppercase">
+            Desarrollado por Nataliya Yanovich &bull; 2026
+        </address>
+    </div>
+
+</body>
+</html>
